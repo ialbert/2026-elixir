@@ -15,7 +15,7 @@ GFF_URL=https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/848/505/GCF_000848505.1
 
 ```
 
-First step downb]load the genome
+First step download the genome (automatically indexes it)
 
 ```
 make genome
@@ -24,6 +24,6 @@ make genome
 second step to index the genmome
 
 ```
-make index
+make fastq
 ```
 
