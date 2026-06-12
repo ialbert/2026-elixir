@@ -1,10 +1,10 @@
 # Ebolavirus genome
 
-NCBI Link:
 
-https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/
+The Makefile operates on URLS obatined from NCBI datasets:
 
-ACCESSION: GCF_000848505.1
+https://www.ncbi.nlm.nih.gov/datasets/
+
 
 ```
 # The URL to the genome.
@@ -15,13 +15,15 @@ GFF_URL=https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/848/505/GCF_000848505.1
 
 ```
 
+First step downb]load the genome
 
-szures, mRNA tipusra
+```
+make genome
+```
 
-awk -F'\t' '$3 == "mRNA"' ebola-mayinga-annotation.gff > mrna-only.gff
+second step to index the genmome
 
-Meresek
+```
+make index
+```
 
-SRR1972976
-
-https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&RID=2GRG19SR016
